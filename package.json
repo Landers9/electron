@@ -1,0 +1,28 @@
+{
+  "name": "mon-app",
+  "version": "1.0.0",
+  "description": "Une application Electron moderne de todo list",
+  "main": "main.js",
+  "author": "Franck <franck@example.com>",
+  "homepage": "https://github.com/Landers9/electron.git",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.mondomaine.monapp",
+    "productName": "Mon App",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility",
+      "maintainer": "Franck <franck@example.com>"
+    }
+  },
+  "devDependencies": {
+    "electron": "^36.3.1",
+    "electron-builder": "^26.0.12"
+  }
+}
